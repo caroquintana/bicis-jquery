@@ -50,8 +50,10 @@ $(document).ready(function(){
             else if($('#input-password').val() == 123456){
                 $('#input-password').after('<span class="error"> Por favor, intenta otra contraseña</span>');
             }
-        
-        } 
+            else if($('#input-password').val() == 098765){
+                $('#input-password').after('<span class="error"> Por favor, intenta otra contraseña</span>');
+            }
+         
        
 
 });
