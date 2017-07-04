@@ -60,8 +60,6 @@ $(document).ready(function(){
             if($('select.form-control').val() == 0){
             $('select.form-control').after('<span class="error"> Por favor, escoge una opción.</span>');
             }
-        
-         
-       
+        }
 
 });
