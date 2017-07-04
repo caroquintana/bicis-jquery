@@ -19,7 +19,6 @@ $(document).ready(function(){
         var inputMessage = new Array("nombre", "apellido", "email", "contraseña");
 
          $('.error').hide();
-
             if(inputVal[0] == ""){
                 $('#name').after('<span class="error"> Por favor, ingresa tu ' + inputMessage[0] + '</span>');
             } 
