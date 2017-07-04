@@ -57,6 +57,9 @@ $(document).ready(function(){
             $('#input-password').after('<span class="error"> Por favor, intenta otra contraseña</span>');
             }
 
+            if($('select.form-control').val() == 0){
+            $('select.form-control').after('<span class="error"> Por favor, escoge una opción.</span>');
+            }
         
          
        
