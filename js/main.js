@@ -39,7 +39,19 @@ $(document).ready(function(){
             } 
             else if(!emailReg.test(email)){
                 $('#input-email').after('<span class="error"> Por favor, ingresa un email válido.</span>');
+            }
+
+            if(inputVal[3] == ""){
+            $('#input-password').after('<span class="error"> Por favor, ingresa una ' + inputMessage[3] + '</span>');
             } 
-        }   
+            else if(($('#input-password').val()).length <= 5){
+            $('#input-password').after('<span class="error"> Se necesitan a lo menos 6 caracteres</span>');
+            }
+            else if($('#input-password').val() == 123456){
+                $('#input-password').after('<span class="error"> Por favor, intenta otra contraseña</span>');
+            }
+        
+        } 
+       
 
 });
